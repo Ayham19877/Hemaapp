@@ -1,4 +1,8 @@
-name: Build APK
+- name: Build APK
+  run: |
+    chmod +x ./gradlew
+    ./gradlew clean
+    ./gradlew assembleDebug
 
 on:
   push:
